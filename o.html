@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        function forceRedirect() {
+            window.location.href = "woltpartner://";
+        }
+
+        window.onload = function() {
+            setTimeout(forceRedirect, 1000); // Attempt redirect after 1 second
+        };
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecting to Wolt Partner App</h1>
+        <p>If you are not redirected, <a href="woltpartner://">click here</a>.</p>
+    </div>
+</body>
+</html>
